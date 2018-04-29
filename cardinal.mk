@@ -20,12 +20,11 @@ $(call inherit-product, device/samsung/j7velte/device.mk)
 # Inherit from those products. Most specific first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common CosmicOS stuff
-$(call inherit-product, vendor/cos/common.mk)
+# Inherit some common Cardinal stuff
+$(call inherit-product, vendor/cardinal/common.mk)
 
 # Device identifier
-COS_RELEASE := true
-PRODUCT_NAME := cos_j7velte
+PRODUCT_NAME := cardinal_j7velte
 PRODUCT_DEVICE := j7velte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
